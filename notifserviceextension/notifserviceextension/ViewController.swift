@@ -9,8 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var dataLbl: UILabel!
+    @IBOutlet weak var dataImg: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +25,17 @@ class ViewController: UIViewController {
     }
 
     func handleNotifData() {
-        let notifData = UserDefaults.standard.array(forKey: "NOTIF_DATA") as? [NSDictionary]
-        let item = notifData?.last
-        let aps = item?["aps"] as? NSDictionary
+        let pref = UserDefaults.init(suiteName: "group.id.gits.notifserviceextension")
+        let notifData = pref?.object(forKey: "NOTIF_DATA") as? NSDictionary
+        let aps = notifData?["aps"] as? NSDictionary
         let alert = aps?["alert"] as? NSDictionary
         let body = alert?["body"] as? String
-        self.dataLbl.text = "Data Total: \(notifData?.count ?? 0)\nLatest Data: \(body ?? "")"
+        
+        self.dataLbl.text = "\(body ?? "-")"
+        // Getting image from UNNotificationAttachment
+        guard let imageData = pref?.object(forKey: "NOTIF_IMAGE") else { return }
+        guard let data = imageData as? Data else { return }
+        self.dataImg.image = UIImage(data: data)
     }
     
     @objc func becomeActive() {
@@ -41,4 +47,3 @@ class ViewController: UIViewController {
     }
     
 }
-
