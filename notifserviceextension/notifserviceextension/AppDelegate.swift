@@ -62,9 +62,6 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     // Receive displayed notifications for iOS 10 devices.
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         let userInfo = notification.request.content.userInfo
-        // With swizzling disabled you must let Messaging know about the message, for Analytics
-        // Messaging.messaging().appDidReceiveMessage(userInfo)
-        // Print full message.
         print("Receive notification in the foreground \(userInfo)")
         let pref = UserDefaults.init(suiteName: "group.id.gits.notifserviceextension")
         pref?.set(userInfo, forKey: "NOTIF_DATA")
