@@ -32,7 +32,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.058823529411764705" green="0.29803921568627451" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yPr-zM-Lee" firstAttribute="leading" secondItem="FTx-b3-pa4" secondAttribute="leading" id="7bx-53-wEV"/>
                             <constraint firstItem="hYx-Ns-qEQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9V0-Yq-LI4"/>

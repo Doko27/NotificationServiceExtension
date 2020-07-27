@@ -59,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
     
-    // Receive displayed notifications for iOS 10 devices.
+    // Receive displayed notifications for iOS 10 or later devices.
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         let userInfo = notification.request.content.userInfo
         print("Receive notification in the foreground \(userInfo)")
