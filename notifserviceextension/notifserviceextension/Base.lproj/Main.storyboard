@@ -27,35 +27,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeJ-fw-Lyn">
-                                <rect key="frame" x="24" y="567" width="327" height="40"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="jD5-Xq-Ker"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="REFRESH">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="refreshAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4G-nD-J8o"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yPr-zM-Lee">
-                                <rect key="frame" x="24" y="205.5" width="327" height="301.5"/>
+                                <rect key="frame" x="24" y="205.5" width="327" height="421.5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CeJ-fw-Lyn" secondAttribute="bottom" constant="60" id="0aY-Rn-uLf"/>
                             <constraint firstItem="yPr-zM-Lee" firstAttribute="leading" secondItem="FTx-b3-pa4" secondAttribute="leading" id="7bx-53-wEV"/>
                             <constraint firstItem="hYx-Ns-qEQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9V0-Yq-LI4"/>
-                            <constraint firstItem="CeJ-fw-Lyn" firstAttribute="trailing" secondItem="hYx-Ns-qEQ" secondAttribute="trailing" id="Aaw-1M-NHN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yPr-zM-Lee" secondAttribute="bottom" constant="40" id="F7i-ni-usa"/>
                             <constraint firstItem="hYx-Ns-qEQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="KAL-Vx-iZk"/>
                             <constraint firstItem="yPr-zM-Lee" firstAttribute="top" secondItem="FTx-b3-pa4" secondAttribute="bottom" constant="20" id="TtG-ZE-AHk"/>
-                            <constraint firstItem="CeJ-fw-Lyn" firstAttribute="top" secondItem="yPr-zM-Lee" secondAttribute="bottom" constant="60" id="Y1W-jH-YwM"/>
-                            <constraint firstItem="CeJ-fw-Lyn" firstAttribute="leading" secondItem="hYx-Ns-qEQ" secondAttribute="leading" id="c54-HO-s5s"/>
                             <constraint firstItem="FTx-b3-pa4" firstAttribute="top" secondItem="hYx-Ns-qEQ" secondAttribute="bottom" constant="100" id="e7V-0f-rjy"/>
                             <constraint firstItem="yPr-zM-Lee" firstAttribute="trailing" secondItem="FTx-b3-pa4" secondAttribute="trailing" id="omh-tF-kSe"/>
                             <constraint firstItem="hYx-Ns-qEQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="tGP-bM-206"/>

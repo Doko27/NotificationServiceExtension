@@ -65,7 +65,11 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         // With swizzling disabled you must let Messaging know about the message, for Analytics
         // Messaging.messaging().appDidReceiveMessage(userInfo)
         // Print full message.
-        print("Receive notif iOS 10 when active \(userInfo)")
+        print("Receive notification in the foreground \(userInfo)")
+        let pref = UserDefaults.init(suiteName: "group.id.gits.notifserviceextension")
+        pref?.set(userInfo, forKey: "NOTIF_DATA")
+        guard let vc = UIApplication.shared.windows.first?.rootViewController as? ViewController else { return }
+        vc.handleNotifData()
         completionHandler([.alert, .badge, .sound])
     }
     

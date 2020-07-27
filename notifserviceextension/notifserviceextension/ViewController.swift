@@ -42,8 +42,4 @@ class ViewController: UIViewController {
         self.handleNotifData()
     }
     
-    @IBAction func refreshAction(_ sender: UIButton) {
-        self.handleNotifData()
-    }
-    
 }
