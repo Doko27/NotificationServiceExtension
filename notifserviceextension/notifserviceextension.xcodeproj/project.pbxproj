@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0902D8B524CEB0C9002FFB5D /* pushTest.apns in Resources */ = {isa = PBXBuildFile; fileRef = 0902D8B424CEB0C9002FFB5D /* pushTest.apns */; };
 		09A1BBEF24C5771A009E3B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1BBEE24C5771A009E3B9E /* AppDelegate.swift */; };
 		09A1BBF124C5771A009E3B9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1BBF024C5771A009E3B9E /* SceneDelegate.swift */; };
 		09A1BBF324C5771A009E3B9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1BBF224C5771A009E3B9E /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0902D8B424CEB0C9002FFB5D /* pushTest.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pushTest.apns; sourceTree = "<group>"; };
 		09A1BBEB24C5771A009E3B9E /* notifserviceextension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notifserviceextension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A1BBEE24C5771A009E3B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A1BBF024C5771A009E3B9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		09A1BBE224C5771A009E3B9E = {
 			isa = PBXGroup;
 			children = (
+				0902D8B424CEB0C9002FFB5D /* pushTest.apns */,
 				09A1BBED24C5771A009E3B9E /* notifserviceextension */,
 				09A1BC0724C57752009E3B9E /* NotificationService */,
 				09A1BBEC24C5771A009E3B9E /* Products */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09A1BBFB24C5771C009E3B9E /* LaunchScreen.storyboard in Resources */,
+				0902D8B524CEB0C9002FFB5D /* pushTest.apns in Resources */,
 				09A1BBF824C5771C009E3B9E /* Assets.xcassets in Resources */,
 				09A1BBF624C5771A009E3B9E /* Main.storyboard in Resources */,
 			);
